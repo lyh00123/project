@@ -22,7 +22,7 @@ $(".hx-btn").on('touchend click', function () {
 })
 
 //免费报价按钮
-$("#bj-btn").on('touchstart', function () {
+$("#bj-btn").on('touchstart click', function () {
 //	alert(111);
 //	e.stopPropagation();
 	var city= $("input[name='Addr']").val().length;
