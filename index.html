@@ -1,11 +1,376 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+		<title>海联</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" href="css/address.css" />
+		<link rel="stylesheet" href="css/phone.css" />
 	</head>
+
 	<body>
-	<h2>github project项目 修改123</h2>
-	<p>aaklsdj</p>
+		<div class="wrap">
+			<!--顶部-->
+			<header>
+				<img src="img/top.png" alt="" />
+			</header>
+			<div class="main">
+
+				<!--公司简介-->
+				<section class="profile">
+					<h2 class="pub-title">公司简介</h2>
+					<p>
+						我公司是一家以香港为背景，立足四川、山东两大产业园（南北一体），发掘国内国外两个市场的综合型产业体。
+					</p>
+					<p>
+						我们恪守"装配美好生活”的企业使命，主动拥抱科技变革和产业升级，为人们所向往的美好生活提供“海联坚端解决方案”。
+					</p>
+					<p>
+						公司涉及业务有轻钢别墅、全铝家具、全屋整装，实现工厂化定制、智能化配送、模块化拼装。
+					</p>
+				</section>
+
+				<!--业务范围-->
+				<section class="yw-box">
+					<h2 class="pub-title">业务范围及优势</h2>
+					<div class="pub-tab">
+						<ul class="hd">
+							<li>
+								<a href="javascript:;" class="active">轻钢别墅</a>
+							</li>
+							<li>
+								<a href="javascript:;">全铝家具</a>
+							</li>
+							<li>
+								<a href="javascript:;">全屋整装</a>
+							</li>
+						</ul>
+						<div class="tab-box bd">
+							<div>
+								<div class="banner1">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<p>
+									1智能化拼装，抗震防风防火防潮，隔音环保，耐腐蚀，寿命长5大产品体系，15天圆你一个别墅梦
+								</p>
+							</div>
+							<div style="display: none;">
+								<div class="banner2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<p>
+									智能化拼装，抗震防风防火防潮，隔音环保，耐腐蚀，寿命长5大产品体系，15天圆你一个别墅梦
+								</p>
+							</div>
+							<div style="display: none;">
+								<div class="banner3">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/banner1.jpg" alt="">
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<p>
+									智能化拼装，抗震防风防火防潮，隔音环保，耐腐蚀，寿命长5大产品体系，15天圆你一个别墅梦
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--免费报价-->
+				<section class="bj-box">
+					<h2 class="pub-title">免费获取装修报价</h2>
+					<div class="bj-inner">
+						<section>
+							<img src="img/zj.gif" alt="" />
+						</section>
+						<section id="areaLabel">
+							<input type="text" id="Addr" name="Addr" readonly="readonly" onfocus="this.blur()" placeholder="请输入您所在的城市" />
+							<img src="img/dw.png" alt="" />
+						</section>
+						<div id="addressSelectWrapper">
+							<div id="addressSelect">
+								<div class="tip">
+									<h3>所在地区</h3>
+									<button type="button" id="cancel"></button>
+								</div>
+								<div id="address">
+									<ul class="selected-address">
+										<li class="lastarea" id="lastprovince">请选择</li>
+										<li class="lastarea" id="lastcity">请选择</li>
+										<li class="lastarea" id="lastarea">请选择</li>
+										<li class="lastarea" id="lasttown">请选择</li>
+									</ul>
+									<div class="address-content">
+										<ul id="province"></ul>
+										<ul id="city"></ul>
+										<ul id="area"></ul>
+										<ul id="town"></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<section>
+							<input type="text" placeholder="请输入您的房屋面积" name="mj"/>
+							<img src="img/mj.png" alt="" />
+						</section>
+						<section class="hx-btn">
+							<input type="text" placeholder="" value="2室1厅1厨1卫" name="hx"/>
+							<img src="img/hx.png" alt="" />
+						</section>
+						<section>
+							<input type="tel" placeholder="请输入您的手机号获取报价结果" name="sj"/>
+						</section>
+						<a href="javascript:;" class="bj-btn">免费获取装修报价明细单</a>
+					</div>
+				</section>
+
+				<!--效果展示-->
+				<section class="xg-box">
+					<h2 class="pub-title">效果展示</h2>
+					<!--滑动轮播-->
+					<div class="fp-slide">
+						<ul class="swiper-wrapper ">
+							<li class="swiper-slide ">
+								<a href="#">
+									<img src="img/banner1.jpg" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<img src="img/banner1.jpg" />
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<img src="img/banner1.jpg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--联系我们-->
+				<section class="contact">
+					<h2 class="pub-title">联系我们</h2>
+					<p>海联装配式轻钢别墅、集成装饰、全铝家居，设计定制化，生产工业化，装配模块化，快建、快装、快住，安全、环保、智能。</p>
+					<p>区域代理 联系方式：井经理
+						<a href="tel:13833601965">13833601965</a>（微信同步）</p>
+				</section>
+
+				<!--底部-->
+				<section class="bottom">
+					<a href="#">
+						<img src="img/qkou.gif" alt="" />
+					</a>
+				</section>
+				
+				<!--滑到底部-->
+				<div class="down-box">
+					<img src="img/down.png"/>
+				</div>
+				
+				<!--提交成功弹窗-->
+				<div class="shade-box pop1">
+					<div class="tj-container">
+						<h3>提交成功</h3>
+						<img src="img/tjcg.png" alt="" />
+						<p>您的申请已提交成功！<br />装修报价明细单将以短信的形式发送到<br />您的手机，请注意查收</p>
+						<a href="javascript:;" class="pub-btn">确定</a>
+					</div>
+				</div>
+				
+				<!--户型弹窗-->
+				<div class="shade-box pop2">
+					<div class="hx-container">
+						<p>请选择您家的户型</p>
+						<ul>
+							<li>
+								<a href="javascript:;">一室</a>
+								<a href="javascript:;" class="active">二室</a>
+								<a href="javascript:;">三室</a>
+								<a href="javascript:;">四室</a>
+								<a href="javascript:;">五室</a>
+							</li>
+							<li>
+								<a href="javascript:;">1厅</a>
+								<a href="javascript:;">2厅</a>
+								<a href="javascript:;">3厅</a>
+								<a href="javascript:;"  class="active">4厅</a>
+								<a href="javascript:;">5厅</a>
+							</li>
+							<li>
+								<a href="javascript:;">1厨</a>
+								<a href="javascript:;">2厨</a>
+								<a href="javascript:;">3厨</a>
+								<a href="javascript:;">4厨</a>
+								<a href="javascript:;"  class="active">5厨</a>
+							</li>
+							<li>
+								<a href="javascript:;">1卫</a>
+								<a href="javascript:;">2卫</a>
+								<a href="javascript:;">3卫</a>
+								<a href="javascript:;"  class="active">4卫</a>
+								<a href="javascript:;">5卫</a>
+							</li>
+						</ul>
+						<a href="javascript:;"  class="pub-btn">确定</a>
+						<a href="javascript:;" class="close">
+							<img src="img/close.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+			<script type="text/javascript" src="js/common.js"></script>
+			<script type="text/javascript" src="js/swiper.min.js"></script>
+			<script type="text/javascript" src="js/jquery.SuperSlide2.js"></script>
+			<script type="text/javascript" src="js/city.js"></script>
+			<script type="text/javascript" src="js/map.js" ></script>
+			<script type="text/javascript" src="js/utils.js" ></script>
+			<script>
+				$(".pub-tab").slide();
+				$(window).scroll(function() {
+					var offsetTop = $(window).scrollTop()/4 + 60 + "px";
+					$(".down-box").animate({
+						top: offsetTop
+					},
+					{
+						duration: 100,
+						queue: false
+					});
+				});
+				var swiper = new Swiper('.banner1', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 50,
+					autoplay: 4000,
+
+				})
+				var swiper = new Swiper('.banner2', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 50,
+					autoplay: 4000,
+
+				})
+				var swiper = new Swiper('.banner3', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 50,
+					autoplay: 4000,
+
+				})
+			</script>
+			<script>
+				var swiper = new Swiper('.fp-slide', {
+					initialSlide: 1,
+					autoplay: 30000,
+					speed: 800,
+					loop: true,
+					spaceBetween: 0,
+					slidesPerView: 'auto',
+					centeredSlides: true,
+					slidesOffsetBefore: 0,
+					grabCursor: true,
+				});
+			</script>
+			<script>
+				var geolocation = new BMap.Geolocation();
+			geolocation.getCurrentPosition(function(r) {
+				if(this.getStatus() == BMAP_STATUS_SUCCESS) {
+					var geoc = new BMap.Geocoder();
+					var pt = r.point;
+					geoc.getLocation(pt,
+						function(rs) {
+							var addComp = rs.addressComponents;
+							var ml =addComp.city + addComp.district + addComp.street + addComp.streetNumber;
+							localStorage.setItem('city', '');
+							localStorage.setItem('city', addComp.city);
+							localStorage.setItem('area', '');
+							localStorage.setItem('area', addComp.district);
+							var vcity = utils.request('vcity');
+							if(!utils.isEmpty(vcity)) {} else {
+								// 在这里回填你的地址
+								$("#Addr").val(addComp.province +addComp.city + addComp.district);
+
+							}
+							localStorage.setItem('mylocation', '');
+							localStorage.setItem('mylocation', ml);
+							localStorage.setItem('latitude', '');
+							localStorage.setItem('latitude', r.point.lat);
+							localStorage.setItem('longitude', '');
+							localStorage.setItem('longitude', r.point.lng);
+						});
+
+				} else {
+					console.log('failed:' + this.getStatus());
+				}
+			}, {
+				enableHighAccuracy: true
+			});
+
+				//			城市级联
+				$(function() {
+					// 地址选择器遮罩层打开与关闭
+					$("#areaLabel").click(function(e) {
+						$("#addressSelectWrapper").show();
+						e.stopPropagation();
+					});
+					$(document).click(function() {
+						$("#addressSelectWrapper").hide();
+					});
+					$("#cancel").click(function() {
+						$("#addressSelectWrapper").hide();
+					});
+					$("#addressSelect").click(function(e) {
+						e.stopPropagation();
+					});
+					initAddress();
+				});
+
+				//初始化地址选择
+				function initAddress() {
+					$("#Addr").cityLinkage({
+						containerId: 'addressSelectWrapper',
+						getSelectedCode: function() {
+							return $("#Addr").data("code");
+						},
+						callback: function(data) {
+							$("#Addr").val(data.addr).data("code", data.town.code);
+						}
+					});
+				}
+			</script>
+		</div>
 	</body>
+
 </html>
